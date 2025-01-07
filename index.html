@@ -1,0 +1,150 @@
+<section id="profil" class="container my-5">
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pesan Selamat</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0; /* Menghapus margin default */
+            }
+            .container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Mengatur agar elemen berada di atas */
+                align-items: center; /* Memusatkan secara horizontal */
+                height: 100%;
+                padding-top: 20%; /* Memberi jarak dari atas */
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="container">
+        <h1 id="pesan"></h1>
+    </div>
+    
+    <script>
+        function updateMessage() {
+            const now = new Date();
+            const hours = now.getHours();
+            
+            let greeting;
+            if (hours < 12) {
+                greeting = "Selamat Pagi!";
+            } else if (hours < 18) {
+                greeting = "Selamat Siang!";
+            } else {
+                greeting = "Selamat Malam!";
+            }
+            
+            document.getElementById('pesan').textContent = greeting;
+        }
+    
+        updateMessage(); // Memanggil fungsi untuk menampilkan pesan saat halaman dimuat
+    </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+    <html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text di Tengah</title>
+    <style>
+        .center-text {
+            text-align: center; /* Untuk perataan horizontal */
+        }
+    </style>
+    <html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    </head>
+            <div class="col-md-8">
+                <head>
+                    <h2> Selamat Datang di Profil Saya</h2>
+                    <style>
+                        body, html {
+                            height: 100%;
+                            margin: 0; /* Menghapus margin default */
+                        }
+                        .container {
+                            display: flex;
+                            justify-content: center; /* Memusatkan secara horizontal */
+                            align-items: center; /* Memusatkan secara vertikal */
+                            height: 100%;
+                        }
+                        img {
+                            max-width: 100%; /* Membuat gambar responsif */
+                            height: auto;
+                        }
+                    </style>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img src="foto satu.jpeg" class="img-fluid rounded-circle" alt="Foto Profil">
+                        </div>
+                
+                    </style>
+                    <style>
+                        .container {
+                            display: flex;
+                            justify-content: center; /* Untuk perataan horizontal */
+                            align-items: center;    /* Untuk perataan vertikal */
+                            height: 100vh;          /* Tinggi penuh layar */
+                            margin: 0;
+                        }
+                    </style>
+                <div class="centered">
+                    <ul>
+                        <li>Nama : kikit wahyuni </li>
+                        <li>Npm : 23670061</li>
+                        <li>Kelas : 3B </li>
+                        <li>Prodi : Informatika</li>
+                    </ul>
+                </div>
+            
+                
+                
+            </div>
+        </div>
+    </head>
+    
+</section>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tombol Next</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%; /* Mengatur tinggi body dan html untuk memusatkan secara vertikal */
+        }
+        .centered {
+            display: flex;
+            justify-content: center; /* Memusatkan secara horizontal */
+            align-items: center; /* Memusatkan secara vertikal */
+            height: 100%; /* Mengatur tinggi div sesuai viewport */
+        }
+    </style>
+</head>
+<body>
+
+<div class="centered">
+    <div class="text-center">
+        <a href="profil.html" class="btn btn-primary">Next</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+</html>

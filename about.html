@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Selamat</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0; /* Menghapus margin default */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Mengatur agar elemen berada di atas */
+            align-items: center; /* Memusatkan secara horizontal */
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1 id="pesan"></h1>
+</div>
+
+<script>
+    function updateMessage() {
+        const now = new Date();
+        const hours = now.getHours();
+        
+        let greeting;
+        if (hours < 12) {
+            greeting = "Selamat Pagi!";
+        } else if (hours < 18) {
+            greeting = "Selamat Siang!";
+        } else {
+            greeting = "Selamat Malam!";
+        }
+        
+        document.getElementById('pesan').textContent = greeting;
+    }
+
+    updateMessage(); // Memanggil fungsi untuk menampilkan pesan saat halaman dimuat
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>Selamat Datang di</h1>
+    <h1>Profil Saya</h1>
+</header>
+
+<section>
+    <h2>Informasi Pribadi</h2>
+    <p>Nama : kikit wahyuni</p>
+    <p>Tempat,Tanggal lahir : 02,Januari 2006</p>
+    <p>Alamat : Sambung 05/03 Godong Grobogan </p>
+    <p>Status : Mahasiswa</p>
+</section>
+
+<section>
+    <h2>Pengalaman Kerja / Proyek</h2>
+    <ul>
+        <li><strong>Posisi:</strong> kasir di toko mekar jaya plastik 
+            <p><strong>Durasi:</strong> desember 2023 - sekarang</p>
+            <p>saya bertanggungjawab sebagai pengelola uang dan juga barang</p>
+        </li>
+        <li><strong>Posisi:</strong> online shop  
+            <p><strong>Durasi:</strong> januari 2020 - sekarang</p>
+            <p>saya bekerja sebagai online shop karena waktu itu banyak orang yang malas untuk keluar belanja jadi saya memutuskan untuk menjadi online shop dengan sistem delivery dan cod</p>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <h2>Keterampilan</h2>
+    <ul>
+        <li>jualan online </li>
+        <li>memproduksi basreng  </li>
+    
+    </ul>
+</section>
+
+</body>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman 2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <a href="index.html" class="button">Back</a>
+    <a href="gallery.html" class="button">Next</a>
+</body>
+</html>
+
+</html>
